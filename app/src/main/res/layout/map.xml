@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Origin"
+        android:gravity="center"
+        android:id="@+id/txt_origin"
+        android:textColor="#000"
+        android:textSize="32sp"
+        android:layout_height="60dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <EditText
+            android:layout_width="200dp"
+            android:textColorHint="#4CAF50"
+            android:id="@+id/destination"
+            android:gravity="center"
+            android:hint="destination"
+            android:layout_height="60dp" />
+        <Button
+            android:gravity="center"
+            android:textColorHint="#4CAF50"
+            android:layout_width="200dp"
+            android:id="@+id/search"
+            android:hint="search"
+            android:layout_height="60dp" />
+    </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:tag="com.t3h.demomap.googlemap"
+        class="com.t3h.demomap.DemoMapFragment"
+        android:layout_height="match_parent"></fragment>
+
+
+</LinearLayout>
